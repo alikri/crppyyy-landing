@@ -1,0 +1,62 @@
+.intro-picture {
+  position: relative;
+  margin-right: 75px;
+}
+
+
+.phone-body-ouside,
+.phone-body,
+.phone-background,
+.phone,
+.phone-buttons,
+.phone-antennas,
+.phone-front-camera,
+.phone-notch {
+  position: absolute;
+  z-index: 1;
+}
+
+.phone-body-ouside {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.phone-body {
+  left: 1px;
+  z-index: 2;
+}
+
+.phone-background {
+  left: 1px;
+  z-index: 3;
+}
+
+.phone {
+  top: 12px;
+  left: 12.5px;
+  z-index: 3;
+}
+
+.phone-buttons {
+  top: 137px;
+  left: -2.5px;
+}
+
+.phone-antennas {
+  z-index: 6;
+}
+
+.phone-front-camera {
+  top: 22px;
+  left: 122px;
+  z-index: 7;
+}
+
+.phone-notch {
+  top: 6px;
+  left: 140px;
+  z-index: 7;
+}
