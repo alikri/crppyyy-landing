@@ -4,7 +4,7 @@
 }
 
 
-.phone-body-ouside,
+.phone-body-outside,
 .phone-body,
 .phone-background,
 .phone,
@@ -16,11 +16,10 @@
   z-index: 1;
 }
 
-.phone-body-ouside {
+.phone-body-outside {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 
@@ -46,6 +45,7 @@
 }
 
 .phone-antennas {
+
   z-index: 6;
 }
 

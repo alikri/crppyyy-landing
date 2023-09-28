@@ -14,7 +14,14 @@ export const Phone = () => {
   return (
     <div className={styles['intro-picture']}>
       <Image
-        className={styles['phone-body-ouside']}
+        className={styles['phone-antennas']}
+        src={PhoneAntennas}
+        alt="Crypto Pay"
+        width={'100%'}
+        height={'fit-content'}
+      />
+      <Image
+        className={styles['phone-body-outside']}
         src={PhoneBodyOuside}
         alt="Crypto Pay"
         width={'100%'}
@@ -45,13 +52,6 @@ export const Phone = () => {
       <Image
         className={styles['phone-buttons']}
         src={PhoneButtons}
-        alt="Crypto Pay"
-        width={'100%'}
-        height={'fit-content'}
-      />
-      <Image
-        className={styles['phone-antennas']}
-        src={PhoneAntennas}
         alt="Crypto Pay"
         width={'100%'}
         height={'fit-content'}
