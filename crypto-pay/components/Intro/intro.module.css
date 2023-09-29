@@ -30,6 +30,7 @@
   line-height: 24px;
   letter-spacing: 0.5px;
   margin-bottom: 32px;
+  margin-top: 16px;
 }
 
 .intro-button {
@@ -37,4 +38,36 @@
   font-weight: 700;
   line-height: 24px;
   background-color: var(--blue);
+}
+
+.bots-container {
+  margin-top: 56px;
+  position: relative;
+}
+
+.bot-image-1,
+.bot-image-2,
+.bot-image-3,
+.bot-image-4 {
+  position: absolute;
+}
+
+.bot-image-1 {
+  left: 64px;
+  z-index: 2;
+}
+
+.bot-image-2 {
+  left: 128px;
+  z-index: 3;
+}
+
+.bot-image-3 {
+  left: 192px;
+  z-index: 4;
+}
+
+.bot-image-4 {
+  left: 256px;
+  z-index: 5;
 }
