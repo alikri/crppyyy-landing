@@ -1,4 +1,5 @@
 .features {
+  position: relative;
   background-color: var(--dark-blue);
   display: flex;
   align-items: center;
@@ -8,13 +9,16 @@
 }
 
 .features-wrapper {
-  max-height: 500px;
+  max-height: 488px;
   overflow: hidden;
+}
+
+.features-carousel {
+  position: relative;
 }
 
 .feature {
   display: flex;
-  margin-block: 10px;
 }
 
 .feature-img-container {
@@ -40,6 +44,7 @@
 .feature-content-container {
   margin-top: 10px;
   max-width: 488px;
+  margin-right: 100px;
 }
 
 .feature-title {
@@ -75,4 +80,122 @@
   font-size: 18px;
   max-width: 213px;
   max-height: 58px;
+}
+
+.features-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider {
+  width: 4px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.slider-top-number,
+.slider-bottom-number {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--white);
+}
+
+@keyframes slide-from-first-down {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: -488px;
+  }
+}
+
+
+@keyframes slide-from-second-down {
+  from {
+    top: -488px;
+  }
+
+  to {
+    top: -976px;
+  }
+}
+
+@keyframes slide-from-last-up {
+  from {
+    top: -976px;
+  }
+
+  to {
+    top: -488px;
+  }
+}
+
+@keyframes slide-from-second-up {
+  from {
+    top: -488px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes slide-from-top-to-bottom {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: -976px;
+  }
+}
+
+@keyframes slide-from-bottom-to-top {
+  from {
+    top: -976px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+
+
+
+.transition-down-from-first {
+  animation-name: slide-from-first-down;
+  animation-duration: 2s;
+}
+
+.transition-down-from-second {
+  animation-name: slide-from-second-down;
+  animation-duration: 2s;
+}
+
+.transition-up-from-last {
+  animation-name: slide-from-last-up;
+  animation-duration: 2s;
+}
+
+.transition-up-from-second {
+  animation-name: slide-from-second-up;
+  animation-duration: 2s;
+}
+
+.transition-down-from-top {
+  animation-name: slide-from-top-to-bottom;
+  animation-duration: 2s;
+}
+
+.transition-up-from-bottom {
+  animation-name: slide-from-bottom-to-top;
+  animation-duration: 2s;
 }

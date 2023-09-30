@@ -1,5 +1,6 @@
 export const featuresData = [
   {
+    id: 1,
     title: 'Instant',
     titleSecondLine: 'Auto Sales:',
     titleDetails: 'Boost conversion',
@@ -9,6 +10,7 @@ export const featuresData = [
     imageBackground: 'var(--background-pink)',
   },
   {
+    id: 2,
     title: 'Channels',
     titleSecondLine: 'integration:',
     titleDetails: 'Seamless access',
@@ -20,6 +22,7 @@ export const featuresData = [
     link: 'https://t.me/CryptoBot',
   },
   {
+    id: 3,
     title: 'Endless',
     titleSecondLine: 'customization:',
     titleDetails: 'with Webhooks',
