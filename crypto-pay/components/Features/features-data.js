@@ -1,0 +1,31 @@
+export const featuresData = [
+  {
+    title: 'Instant',
+    titleSecondLine: 'Auto Sales:',
+    titleDetails: 'Boost conversion',
+    detailsFirstPart: 'Immediately deliver digital products',
+    detailsSecondPart: 'and services to your users.',
+    image: '/features/feature1.svg',
+    imageBackground: 'var(--background-pink)',
+  },
+  {
+    title: 'Channels',
+    titleSecondLine: 'integration:',
+    titleDetails: 'Seamless access',
+    detailsFirstPart: 'Automatically unlock exclusive content',
+    detailsSecondPart: 'to your users.',
+    image: '/features/feature2.svg',
+    imageBackground: 'var(--background-yellow)',
+    linkImage: '/features/feature2link.svg',
+    link: 'https://t.me/CryptoBot',
+  },
+  {
+    title: 'Endless',
+    titleSecondLine: 'customization:',
+    titleDetails: 'with Webhooks',
+    detailsFirstPart: 'Receive successful payment notifications in',
+    detailsSecondPart: 'real-time. Integrate to any scenario of your service',
+    image: '/features/feature3.svg',
+    imageBackground: 'var(--background-blue)',
+  },
+];

@@ -1,5 +1,6 @@
 .intro {
   display: flex;
+  max-width: 1200px;
   width: 100%;
   justify-content: space-between;
   padding-block: 20px;

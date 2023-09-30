@@ -1,3 +1,4 @@
+import { Features } from '@/components/Features/Features';
 import { Intro } from '@/components/Intro/Intro';
 import Head from 'next/head';
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main className="main-content">
         <Intro />
+        <Features />
       </main>
     </>
   );
