@@ -16,9 +16,9 @@ export const Feature = (props) => {
   } = props.feature;
 
   return (
-    <div className={styles['feature-sales']}>
+    <div className={styles['feature']}>
       <div
-        className={styles['feature-sales-img-container']}
+        className={styles['feature-img-container']}
         style={{
           background: imageBackground,
         }}
@@ -42,19 +42,17 @@ export const Feature = (props) => {
           </Link>
         )}
       </div>
-      <div className={styles['feature-sales-content-container']}>
-        <h2 className={styles['feature-sales-title']}>
+      <div className={styles['feature-content-container']}>
+        <h2 className={styles['feature-title']}>
           {title} <br />
           {titleSecondLine}
           <br />
           <span>{titleDetails}</span>
         </h2>
-        <p className={styles['feature-sales-details']}>
+        <p className={styles['feature-details']}>
           {detailsFirstPart} <br /> {detailsSecondPart}{' '}
         </p>
-        <button className={styles['feature-sales-button']}>
-          Open API Docs
-        </button>
+        <button className={styles['feature-button']}>Open API Docs</button>
       </div>
     </div>
   );
