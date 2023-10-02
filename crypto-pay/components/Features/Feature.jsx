@@ -13,10 +13,17 @@ export const Feature = (props) => {
     titleDetails,
     linkImage,
     titleSecondLine,
+    id,
   } = props.feature;
 
+  const { handleClick } = props;
+
   return (
-    <div className={styles['feature']}>
+    <div
+      id={`feature-${id}`}
+      className={styles['feature']}
+      onClick={handleClick}
+    >
       <div
         className={styles['feature-img-container']}
         style={{
