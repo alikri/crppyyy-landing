@@ -1,5 +1,6 @@
 import { Features } from '@/components/Features/Features';
 import { Intro } from '@/components/Intro/Intro';
+import { Payments } from '@/components/Payments/Payments';
 import Head from 'next/head';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="main-content">
         <Intro />
         <Features />
+        <Payments />
       </main>
     </>
   );

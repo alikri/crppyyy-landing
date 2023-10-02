@@ -1,0 +1,68 @@
+.payments {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 144px;
+}
+
+.payments-container {
+  display: grid;
+  max-width: 1200px;
+  width: 100%;
+  grid-template-columns: repeat(6, 20%);
+  gap: 20px;
+}
+
+.payments-example {
+  color: blue;
+}
+
+.payments-cryptocurrencies {
+  padding: 42px 56px;
+  border-radius: 40px;
+  grid-column: 1 / 6;
+  background-color: var(--background-light);
+  max-width: 1200px;
+}
+
+.payments-cryptocurrencies-title {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -.65px;
+  margin-block: 0px;
+}
+
+.payments-cryptocurrencies-details {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  margin-bottom: 35px;
+  letter-spacing: .5px;
+}
+
+.payments-cryptocurrencies-labels-wrapper {
+  display: flex;
+
+  align-items: center;
+  gap: 30px;
+}
+
+.cryptocurrency-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cryptocurrency-label-container p {
+  color: rgba(17, 17, 17, 0.40);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
