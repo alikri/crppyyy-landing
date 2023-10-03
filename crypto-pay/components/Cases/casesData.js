@@ -1,4 +1,4 @@
-export const featuresData = [
+export const casesData = [
   {
     id: 1,
     title: 'Instant',

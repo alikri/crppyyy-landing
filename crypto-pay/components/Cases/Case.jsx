@@ -1,8 +1,8 @@
-import styles from './features.module.css';
+import styles from './cases.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Feature = (props) => {
+export const Case = (props) => {
   const {
     title,
     image,
@@ -14,24 +14,20 @@ export const Feature = (props) => {
     linkImage,
     titleSecondLine,
     id,
-  } = props.feature;
+  } = props.case;
 
   const { handleClick } = props;
 
   return (
-    <div
-      id={`feature-${id}`}
-      className={styles['feature']}
-      onClick={handleClick}
-    >
+    <div id={`case-${id}`} className={styles['case']} onClick={handleClick}>
       <div
-        className={styles['feature-img-container']}
+        className={styles['case-img-container']}
         style={{
           background: imageBackground,
         }}
       >
         <Image
-          className={styles['feature-img']}
+          className={styles['case-img']}
           src={image}
           alt="Crypto Bot"
           width={link ? 394 : 450}
@@ -40,7 +36,7 @@ export const Feature = (props) => {
         {linkImage && (
           <Link href={link}>
             <Image
-              className={styles['feature-img-link']}
+              className={styles['case-img-link']}
               src={linkImage}
               alt="Crypto Bot"
               width={400}
@@ -49,17 +45,17 @@ export const Feature = (props) => {
           </Link>
         )}
       </div>
-      <div className={styles['feature-content-container']}>
-        <h2 className={styles['feature-title']}>
+      <div className={styles['case-content-container']}>
+        <h2 className={styles['case-title']}>
           {title} <br />
           {titleSecondLine}
           <br />
           <span>{titleDetails}</span>
         </h2>
-        <p className={styles['feature-details']}>
+        <p className={styles['case-details']}>
           {detailsFirstPart} <br /> {detailsSecondPart}{' '}
         </p>
-        <button className={styles['feature-button']}>Open API Docs</button>
+        <button className={styles['case-button']}>Open API Docs</button>
       </div>
     </div>
   );

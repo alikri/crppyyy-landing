@@ -6,6 +6,7 @@
   --dark-blue: #232328;
   --background-color: #f4f6f6;
   --background-light: #F7F9FB;
+  --background-blue-light: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
   --background-pink: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
   --background-yellow: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
   --background-blue: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
@@ -58,10 +59,12 @@
   color: var(--dark);
   letter-spacing: 1.1px;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
+  margin: 0;
 }
 
 a {

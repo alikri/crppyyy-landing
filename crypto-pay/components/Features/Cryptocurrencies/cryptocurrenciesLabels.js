@@ -1,0 +1,58 @@
+export const cryptocurrenciesLabels = [
+  {
+    src: '/images/cryptocurrencies/eth.svg',
+    alt: 'Ethereum',
+    with: 110,
+    height: 110,
+    name: 'ETH',
+  },
+  {
+    src: '/images/cryptocurrencies/usdt.svg',
+    alt: 'Bitcoin',
+    with: 110,
+    height: 110,
+    name: 'USDT',
+  },
+  {
+    src: '/images/cryptocurrencies/ton.svg',
+    alt: 'Litecoin',
+    with: 110,
+    height: 110,
+    name: 'TON',
+  },
+  {
+    src: '/images/cryptocurrencies/btc.svg',
+    alt: 'BTC Crystal',
+    with: 110,
+    height: 110,
+    name: 'BTC',
+  },
+  {
+    src: '/images/cryptocurrencies/trx.svg',
+    alt: 'TRON',
+    with: 110,
+    height: 110,
+    name: 'TRX',
+  },
+  {
+    src: '/images/cryptocurrencies/ltc.svg',
+    alt: 'LTC Coin',
+    with: 96,
+    height: 96,
+    name: 'LTC',
+  },
+  {
+    src: '/images/cryptocurrencies/usdc.svg',
+    alt: 'USDC',
+    with: 110,
+    height: 110,
+    name: 'USDC',
+  },
+  {
+    src: '/images/cryptocurrencies/bnb.svg',
+    alt: 'Binance Coin',
+    with: 100,
+    height: 100,
+    name: 'BNB',
+  },
+];

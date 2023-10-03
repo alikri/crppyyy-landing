@@ -1,114 +1,14 @@
 .features {
-  position: relative;
-  background-color: var(--dark-blue);
   display: flex;
-  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 880px;
-  justify-content: center;
+  padding-top: 144px;
 }
 
-.features-wrapper {
-  max-height: 488px;
-  overflow: hidden;
-}
-
-.features-carousel {
+.features-container {
   display: flex;
   flex-direction: column;
-  transition: all 1s;
-}
-
-.feature {
-  display: flex;
-  cursor: pointer;
-}
-
-.feature-img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 488px;
-  height: 488px;
-  margin-right: 122px;
-  border-radius: 40px;
-  cursor: pointer;
-}
-
-.feature-img {
-  margin-bottom: 5px;
-}
-
-.feature-img-link {
-  cursor: pointer;
-  min-width: 400px;
-}
-
-.feature-content-container {
-  margin-top: 10px;
-  max-width: 488px;
-  margin-right: 100px;
-}
-
-.feature-title {
-  color: var(--blue);
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 629;
-  line-height: 110%;
-  letter-spacing: -1.5px;
-  margin-bottom: 32px;
-  cursor: pointer;
-}
-
-.feature-title span {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 110%;
-  letter-spacing: -1.5px;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.feature-details {
-  font-weight: 300;
-  color: var(--white);
-  line-height: 120%;
-  letter-spacing: .5px;
-  margin-bottom: 32px;
-  cursor: pointer;
-}
-
-.feature-button {
-  background-color: var(--blue);
-  color: var(--white);
-  font-size: 18px;
-  max-width: 213px;
-  max-height: 58px;
-}
-
-.features-slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.slider {
-  width: 4px;
-  height: 110px;
-  background-color: rgba(255, 255, 255, 0.24);
-  border-radius: 90px;
-  cursor: pointer;
-}
-
-.slider-top-number,
-.slider-bottom-number {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  color: var(--white);
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
 }

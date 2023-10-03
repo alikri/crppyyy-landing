@@ -1,6 +1,6 @@
-import { Features } from '@/components/Features/Features';
 import { Intro } from '@/components/Intro/Intro';
-import { Payments } from '@/components/Payments/Payments';
+import { Cases } from '@/components/Cases/Cases';
+import { Features } from '@/components/Features/Features';
 import Head from 'next/head';
 
 export default function Home() {
@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <main className="main-content">
         <Intro />
+        <Cases />
         <Features />
-        <Payments />
       </main>
     </>
   );
