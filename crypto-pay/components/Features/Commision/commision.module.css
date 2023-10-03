@@ -3,6 +3,7 @@
   background-color: var(--background-light);
   border-radius: 40px;
   max-width: 488px;
+  margin-right: 20px;
 }
 
 .commision-wrapper {

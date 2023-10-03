@@ -1,6 +1,7 @@
 import styles from './features.module.css';
 import { Cryptocurrencies } from './Cryptocurrencies/Cryptocurrencies';
 import { Commision } from './Commision/Commision';
+import { Statistics } from './Statistics/Statistics';
 
 export const Features = () => {
   return (
@@ -11,7 +12,7 @@ export const Features = () => {
         </div>
         <div className={styles['features-container-row2']}>
           <Commision />
-          <div className={styles['features-statistics']}></div>
+          <Statistics />
           <div className={styles['features-exchange']}></div>
         </div>
         <div className={styles['features-container-row3']}>

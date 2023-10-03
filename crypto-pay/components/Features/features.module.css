@@ -12,3 +12,8 @@
   width: 100%;
   gap: 20px;
 }
+
+.features-container-row2 {
+  display: flex;
+  justify-content: space-between;
+}
