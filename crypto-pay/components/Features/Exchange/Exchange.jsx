@@ -1,7 +1,7 @@
 import styles from './exchange.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import exchangeButton from '/public/images/exchange/exchangeButton.svg';
+import exchangeButton from '/public/images/exchange/exchange-button.svg';
 import { exchangeLabelsData, exchangeUSDLabel } from './exchangeLabelsData';
 
 export const Exchange = () => {

@@ -3,6 +3,7 @@ import { Cryptocurrencies } from './Cryptocurrencies/Cryptocurrencies';
 import { Commision } from './Commision/Commision';
 import { Statistics } from './Statistics/Statistics';
 import { Exchange } from './Exchange/Exchange';
+import { Verification } from './Verification/Verification';
 
 export const Features = () => {
   return (
@@ -21,7 +22,7 @@ export const Features = () => {
           </div>
         </div>
         <div className={styles['features-container-row3']}>
-          <div className={styles['features-send-coins']}></div>
+          <Verification />
           <div className={styles['features-anonymous']}></div>
         </div>
       </div>
