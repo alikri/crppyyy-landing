@@ -1,6 +1,7 @@
 import styles from './exchange.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import exchangeButton from '/public/images/exchange/exchangeButton.svg';
 import { exchangeLabelsData, exchangeUSDLabel } from './exchangeLabelsData';
 
 export const Exchange = () => {
@@ -22,6 +23,16 @@ export const Exchange = () => {
               alt="crypto label"
             />
           ))}
+        </div>
+        <div className={styles['exchange-button-wrapper']}>
+          <button className={styles['exchange-button']}>
+            <Image
+              src={exchangeButton}
+              width={43}
+              height={25}
+              alt="usd label"
+            />
+          </button>
         </div>
         <div className={styles['exchange-labels-usd']}>
           <Image

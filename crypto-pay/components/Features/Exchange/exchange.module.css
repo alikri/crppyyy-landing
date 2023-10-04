@@ -43,3 +43,17 @@
 .link {
   color: var(--blue);
 }
+
+.exchange-button-wrapper {
+  position: relative;
+}
+
+.exchange-button {
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  background-color: transparent;
+  max-width: 43px;
+  max-height: 25px;
+  padding: 0;
+}
