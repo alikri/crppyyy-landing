@@ -13,7 +13,8 @@
   gap: 20px;
 }
 
-.features-container-row2 {
+.features-container-row2,
+.features-container-row3 {
   display: flex;
   justify-content: space-between;
 }

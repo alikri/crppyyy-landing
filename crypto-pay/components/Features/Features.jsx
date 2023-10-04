@@ -4,6 +4,7 @@ import { Commision } from './Commision/Commision';
 import { Statistics } from './Statistics/Statistics';
 import { Exchange } from './Exchange/Exchange';
 import { Verification } from './Verification/Verification';
+import { Anonymous } from './Anonymous/Anonymous';
 
 export const Features = () => {
   return (
@@ -23,7 +24,7 @@ export const Features = () => {
         </div>
         <div className={styles['features-container-row3']}>
           <Verification />
-          <div className={styles['features-anonymous']}></div>
+          <Anonymous />
         </div>
       </div>
     </section>

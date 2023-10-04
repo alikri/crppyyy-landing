@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-inline: 60px;
 }
 
 
@@ -33,7 +34,6 @@
 
 .message-image {
   position: absolute;
-  left: 90px;
   top: 75px;
   z-index: 2;
 }
