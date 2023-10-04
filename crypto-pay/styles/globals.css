@@ -87,6 +87,8 @@ a {
 }
 
 button {
+  font-family: 'SFPro Medium';
+  letter-spacing: 1.5px;
   font-family: 'SFPro', sans-serif;
   display: inline-flex;
   padding: 18px 42px;
@@ -97,4 +99,10 @@ button {
   border: none;
   border-radius: 900px;
   cursor: pointer;
+}
+
+h3 {
+  font-family: 'SFPro Medium';
+  /* font-family: 'SFPro Text Semibold'; */
+  letter-spacing: 1.3px;
 }

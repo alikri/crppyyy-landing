@@ -85,6 +85,7 @@
   background-color: var(--blue);
   color: var(--white);
   font-size: 18px;
+  letter-spacing: 1px;
   max-width: 213px;
   max-height: 58px;
 }

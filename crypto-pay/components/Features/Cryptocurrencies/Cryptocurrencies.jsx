@@ -13,7 +13,7 @@ export const Cryptocurrencies = () => {
         Bill any supported cryptocurrencies with asset parameter in{' '}
         <Link className={styles['link']} href={'https://t.me/CryptoBot'}>
           GetInvoice
-        </Link>
+        </Link>{' '}
         method
       </p>
       <div className={styles['cryptocurrencies-labels-wrapper']}>
