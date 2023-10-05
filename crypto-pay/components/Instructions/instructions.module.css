@@ -1,0 +1,33 @@
+.instructions {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-light);
+  width: 100%;
+}
+
+.instructions-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.instructions-title-wrapper h2,
+.instructions-title-wrapper a {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 629;
+  line-height: 110%;
+}
+
+.instructions-title-wrapper h2 {
+  margin: 0px;
+}
+
+.instructions-title-wrapper a {
+  color: var(--blue);
+  margin-left: 15px;
+}

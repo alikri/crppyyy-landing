@@ -2,6 +2,7 @@ import { Intro } from '@/components/Intro/Intro';
 import { Cases } from '@/components/Cases/Cases';
 import { Features } from '@/components/Features/Features';
 import Head from 'next/head';
+import { Instructions } from '@/components/Instructions/Instructions';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Intro />
         <Cases />
         <Features />
+        <Instructions />
       </main>
     </>
   );
