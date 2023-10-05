@@ -1,6 +1,6 @@
 import styles from './instructions.module.css';
 import Link from 'next/link';
-import { StepOne } from './stepOne/stepOne';
+import { InstructionsStep } from './InstructionsStep/InstructionsStep';
 
 export const Instructions = () => {
   return (
@@ -12,7 +12,7 @@ export const Instructions = () => {
           Crypto Pay
         </Link>
       </div>
-      <StepOne />
+      <InstructionsStep />
     </section>
   );
 };
