@@ -81,6 +81,11 @@ a {
   align-items: center;
 }
 
+.dark-theme {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
 .main-content {
   display: flex;
   flex-direction: column;

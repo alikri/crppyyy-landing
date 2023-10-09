@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../public/logo_crypto.svg';
 
-export const Header = () => {
+export const Header = ({ darkTheme }) => {
   return (
     <header className={styles.header}>
       <div className={styles['header-logo']}>
@@ -11,22 +11,44 @@ export const Header = () => {
       </div>
       <div className={styles['header-navigation']}>
         <div className={styles['header-link-wrapper']}>
-          <Link className={styles['header-link']} href={'/'}>
+          <Link
+            className={`${styles['header-link']} ${
+              darkTheme && styles['header-link-dark']
+            }`}
+            href={'/'}
+          >
             Use cases
           </Link>
         </div>
         <div className={styles['header-link-wrapper']}>
-          <Link className={styles['header-link']} href={'/'}>
+          <Link
+            className={`${styles['header-link']} ${
+              darkTheme && styles['header-link-dark']
+            }`}
+            href={'/'}
+          >
             Features
           </Link>
         </div>
         <div>
-          <Link className={styles['header-link']} href={'/'}>
+          <Link
+            c
+            className={`${styles['header-link']} ${
+              darkTheme && styles['header-link-dark']
+            }`}
+            href={'/'}
+          >
             How to start
           </Link>
         </div>
       </div>
-      <button className={styles['header-button']}>Get started</button>
+      <button
+        className={`${styles['header-button']} ${
+          darkTheme && styles['header-button-dark']
+        }`}
+      >
+        Get started
+      </button>
     </header>
   );
 };

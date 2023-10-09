@@ -7,6 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    console.log(darkThemeMq);
 
     const handleChange = (event) => {
       setDarkTheme(event.matches);
@@ -30,7 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-wrapper">
-        <main className="main-content">
+        <main className={`main-content ${darkTheme ? 'dark-theme' : ''}`}>
           <MainContent darkTheme={darkTheme} />
         </main>
       </div>

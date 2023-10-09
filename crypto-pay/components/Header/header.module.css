@@ -27,8 +27,18 @@
   font-size: 20px;
 }
 
+.header-link-dark {
+  color: var(--white);
+}
+
 .header-button {
   background: rgba(41, 126, 226, 0.12);
   font-size: 20px;
   color: var(--deep-blue);
+}
+
+.header-button-dark {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--White-60, rgba(255, 255, 255, 0.60));
 }
