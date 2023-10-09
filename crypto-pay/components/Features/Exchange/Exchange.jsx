@@ -2,11 +2,14 @@ import styles from './exchange.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import exchangeButton from '/public/images/exchange/exchange-button.svg';
+import exchangeButonDark from '/public/images/exchange/exchange-button-dark.svg';
 import { exchangeLabelsData, exchangeUSDLabel } from './exchangeLabelsData';
 
-export const Exchange = () => {
+export const Exchange = ({ darkTheme }) => {
   return (
-    <div className={styles['exchange']}>
+    <div
+      className={`${styles['exchange']} ${darkTheme && styles['dark-white']}`}
+    >
       <div className={styles['exchange-labels-container']}>
         <div className={styles['exchange-labels-crypto']}>
           {exchangeLabelsData.map((label, index) => (
@@ -27,7 +30,7 @@ export const Exchange = () => {
         <div className={styles['exchange-button-wrapper']}>
           <button className={styles['exchange-button']}>
             <Image
-              src={exchangeButton}
+              src={darkTheme ? exchangeButonDark : exchangeButton}
               width={43}
               height={25}
               alt="usd label"
@@ -45,10 +48,18 @@ export const Exchange = () => {
           />
         </div>
       </div>
-      <h3>
+      <h3
+        className={`${styles['exchange-title']} ${
+          darkTheme && styles['dark-white']
+        }`}
+      >
         Real-time <br /> exchange rates
       </h3>
-      <p>
+      <p
+        className={`${styles['exchange-details']} ${
+          darkTheme && styles['dark-white80']
+        }`}
+      >
         Request up to date currency rate with the{' '}
         <Link className={styles['link']} href={'#'}>
           getExchangeRates

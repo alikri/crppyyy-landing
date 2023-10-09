@@ -16,7 +16,7 @@
   width: 180px;
 }
 
-.exchange h3 {
+.exchange-title {
   font-size: 42px;
   font-weight: 600;
   line-height: 110%;
@@ -24,7 +24,7 @@
   margin-top: 20px;
 }
 
-.exchange p {
+.exchange-details {
   letter-spacing: .7px;
   margin-bottom: 0px;
 }
@@ -52,4 +52,16 @@
   max-width: 43px;
   max-height: 25px;
   padding: 0;
+  backdrop-filter: blur(8px);
+}
+
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
 }
