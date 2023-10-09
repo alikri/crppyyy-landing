@@ -3,9 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { anonymousData, anonymousDataBg } from './anonymousData';
 
-export const Anonymous = () => {
+export const Anonymous = ({ darkTheme }) => {
   return (
-    <div className={styles['anonymous']}>
+    <div
+      className={`${styles['anonymous']}  ${darkTheme && styles['dark-white']}`}
+    >
       <div className={styles['message-wrapper']}>
         <Image
           className={styles['anonymous-message-image']}
@@ -22,8 +24,18 @@ export const Anonymous = () => {
           alt={anonymousDataBg.alt}
         />
       </div>
-      <h3>Anonymous payments</h3>
-      <p>
+      <h3
+        className={`${styles['anonymous-title']}  ${
+          darkTheme && styles['dark-white']
+        }`}
+      >
+        Anonymous payments
+      </h3>
+      <p
+        className={`${styles['anonymous-details']}  ${
+          darkTheme && styles['dark-white80']
+        }`}
+      >
         Use allow_anonymous parameter <br /> in{' '}
         <Link className={styles['link']} href={'#'}>
           createInvoice

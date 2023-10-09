@@ -27,7 +27,7 @@
   z-index: 1;
 }
 
-.anonymous h3 {
+.anonymous-title {
   font-size: 42px;
   font-style: normal;
   font-weight: 600;
@@ -37,7 +37,7 @@
   margin-left: 15px;
 }
 
-.anonymous p {
+.anonymous-details {
   letter-spacing: .7px;
   margin-bottom: 0px;
   margin-left: 15px;
@@ -45,4 +45,14 @@
 
 .link {
   color: var(--blue);
+}
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
 }
