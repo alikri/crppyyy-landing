@@ -7,7 +7,6 @@ export default function Home() {
 
   useEffect(() => {
     const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
-    console.log(darkThemeMq);
 
     const handleChange = (event) => {
       setDarkTheme(event.matches);
