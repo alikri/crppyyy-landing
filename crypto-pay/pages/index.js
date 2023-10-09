@@ -1,7 +1,25 @@
 import Head from 'next/head';
 import { MainContent } from '@/components/MainContent/MainContent';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [darkTheme, setDarkTheme] = useState(false);
+
+  useEffect(() => {
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleChange = (event) => {
+      setDarkTheme(event.matches);
+    };
+
+    darkThemeMq.addEventListener('change', handleChange);
+
+    setDarkTheme(darkThemeMq.matches);
+
+    return () => {
+      darkThemeMq.removeEventListener('change', handleChange);
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -10,9 +28,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="main-content">
-        <MainContent />
-      </main>
+      <div className="main-wrapper">
+        <main className="main-content">
+          <MainContent darkTheme={darkTheme} />
+        </main>
+      </div>
     </>
   );
 }

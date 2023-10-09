@@ -1,3 +1,4 @@
+import { Header } from '../Header/Header';
 import { Intro } from '../Intro/Intro';
 import { Cases } from '../Cases/Cases';
 import { Features } from '../Features/Features';
@@ -6,16 +7,17 @@ import { Api } from '../Api/Api';
 import { Community } from '../Community/Community';
 import { Footer } from '../Footer/Footer';
 
-export const MainContent = () => {
+export const MainContent = ({ darkTheme }) => {
   return (
     <>
-      <Intro />
-      <Cases />
-      <Features />
-      <Instructions />
-      <Api />
-      <Community />
-      <Footer />
+      <Header darkTheme={darkTheme} />
+      <Intro darkTheme={darkTheme} />
+      <Cases darkTheme={darkTheme} />
+      <Features darkTheme={darkTheme} />
+      <Instructions darkTheme={darkTheme} />
+      <Api darkTheme={darkTheme} />
+      <Community darkTheme={darkTheme} />
+      <Footer darkTheme={darkTheme} />
     </>
   );
 };
