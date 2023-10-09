@@ -30,6 +30,7 @@ export const instructionsData = [
     infoOrder: 1,
     orderLink: 2,
     orderText: 1,
+    background: 'var(--background-gradient-purple)',
   },
   {
     step: 2,
@@ -57,6 +58,7 @@ export const instructionsData = [
     ],
     imageOrder: 1,
     infoOrder: 2,
+    background: 'var(--background-yellow)',
   },
   {
     step: 3,
@@ -80,5 +82,6 @@ export const instructionsData = [
     infoOrder: 1,
     orderLink: 1,
     orderText: 2,
+    background: 'var(--background-blue)',
   },
 ];

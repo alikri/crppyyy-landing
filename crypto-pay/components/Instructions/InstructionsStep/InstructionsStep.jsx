@@ -74,7 +74,7 @@ export const InstructionsStep = () => {
             </div>
             <div
               className={styles['step-image-wrapper']}
-              style={{ order: step.imageOrder }}
+              style={{ order: step.imageOrder, background: step.background }}
             >
               <Image
                 className={styles[`step-image${step.step}`]}
