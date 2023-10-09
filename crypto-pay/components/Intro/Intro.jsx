@@ -10,7 +10,7 @@ const botsImages = [
   '/bots/bot5.svg',
 ];
 
-export const Intro = () => {
+export const Intro = ({ darkTheme }) => {
   const bots = Array.from({ length: 5 }).map((_, i) => {
     return (
       <Image
@@ -27,18 +27,32 @@ export const Intro = () => {
   return (
     <section className={styles['intro']}>
       <div className={styles['intro-content']}>
-        <h1 className={styles['intro-title']}>
+        <h1
+          className={`${styles['intro-title']} ${
+            darkTheme && styles['intro-dark']
+          }`}
+        >
           Crypto payments for <span>telegram bots</span>
         </h1>
-        <p className={styles['intro-subtitle']}>
+        <p
+          className={`${styles['intro-subtitle']} ${
+            darkTheme && styles['intro-dark']
+          }`}
+        >
           Seamlessly accept crypto payments <br /> in your Telegram bots and
           services.
         </p>
         <button className={styles['intro-button']}>Get started</button>
         <div className={styles['bots-container']}>{bots}</div>
-        <p className={styles['intro-subtitle']}>Popular bots use Crypto Pay</p>
+        <p
+          className={`${styles['intro-subtitle']} ${
+            darkTheme && styles['intro-dark']
+          }`}
+        >
+          Popular bots use Crypto Pay
+        </p>
       </div>
-      <Phone />
+      <Phone darkTheme={darkTheme} />
     </section>
   );
 };

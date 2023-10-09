@@ -1,16 +1,17 @@
 import styles from './phone.module.css';
 import Image from 'next/image';
 
-import PhoneBody from '../../public/phone/body.svg';
-import PhoneBodyOuside from '../../public/phone/body-outside.svg';
-import PhoneBackground from '../../public/phone/phone-background.svg';
-import PhoneInner from '../../public/phone/phone-inner.svg';
-import PhoneButtons from '../../public/phone/phone-buttons.svg';
-import PhoneAntennas from '../../public/phone/antennas.svg';
-import PhoneCamera from '../../public/phone/front-camera.svg';
-import PhoneNotch from '../../public/phone/notch.svg';
+import PhoneBody from '../../public/images/phone/body.svg';
+import PhoneBodyOuside from '../../public/images/phone/body-outside.svg';
+import PhoneBackground from '../../public/images/phone/phone-background.svg';
+import PhoneInner from '../../public/images/phone/phone-inner.svg';
+import PhoneButtons from '../../public/images/phone/phone-buttons.svg';
+import PhoneAntennas from '../../public/images/phone/antennas.svg';
+import PhoneCamera from '../../public/images/phone/front-camera.svg';
+import PhoneNotch from '../../public/images/phone/notch.svg';
+import PhoneDark from '../../public/images/phone/phone-dark.svg';
 
-export const Phone = () => {
+export const Phone = ({ darkTheme }) => {
   return (
     <div className={styles['intro-picture']}>
       <Image
@@ -44,7 +45,7 @@ export const Phone = () => {
       />
       <Image
         className={styles['phone']}
-        src={PhoneInner}
+        src={darkTheme ? PhoneDark : PhoneInner}
         alt="Crypto Pay"
         width={'100%'}
         height={'fit-content'}

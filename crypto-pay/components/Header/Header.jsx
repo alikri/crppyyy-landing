@@ -32,7 +32,6 @@ export const Header = ({ darkTheme }) => {
         </div>
         <div>
           <Link
-            c
             className={`${styles['header-link']} ${
               darkTheme && styles['header-link-dark']
             }`}

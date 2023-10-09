@@ -19,6 +19,10 @@
   margin-bottom: 32px;
 }
 
+.intro-dark {
+  color: var(--white);
+}
+
 .intro-title span {
   color: var(--blue);
   letter-spacing: -2.2px;
