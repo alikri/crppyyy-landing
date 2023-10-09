@@ -1,0 +1,59 @@
+.api {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.api-container {
+  margin-block: 120px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-gradient-blue);
+  max-height: 550px;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+}
+
+.api-image-container {
+  position: relative;
+}
+
+.api-image {
+  position: relative;
+  top: 2px;
+  /* right: 50px; */
+}
+
+.api-info h2 {
+  font-size: 56px;
+  color: var(--white);
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  margin-top: 0px;
+}
+
+.api-info p {
+  color: var(--white);
+  margin-top: 0px;
+  margin-bottom: 32px;
+  font-weight: 300;
+  letter-spacing: .55px;
+}
+
+.api-info button {
+  color: var(--white);
+  background-color: transparent;
+  letter-spacing: .2px;
+  border: 1px solid var(--White-60, rgba(255, 255, 255, 0.60));
+}
+
+.api-info button a {
+  font-family: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}

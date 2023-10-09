@@ -3,6 +3,7 @@ import { Cases } from '@/components/Cases/Cases';
 import { Features } from '@/components/Features/Features';
 import Head from 'next/head';
 import { Instructions } from '@/components/Instructions/Instructions';
+import { Api } from '@/components/Api/Api';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Cases />
         <Features />
         <Instructions />
+        <Api />
       </main>
     </>
   );
