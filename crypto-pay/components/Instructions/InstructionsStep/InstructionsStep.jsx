@@ -9,7 +9,13 @@ export const InstructionsStep = () => {
       {instructionsData.map((step, index) => {
         return (
           <div key={`step${index}${step.step}`} className={styles['step']}>
-            <div className={styles['step-info-wrapper']}>
+            <div
+              className={styles['step-info-wrapper']}
+              style={{
+                order: step.infoOrder,
+                paddingLeft: step.infoOrder === 2 ? '122px' : '0px',
+              }}
+            >
               <h2>{step.step}</h2>
               <h3>{step.title}</h3>
               {step.description && <p>{step.description}</p>}
@@ -66,9 +72,12 @@ export const InstructionsStep = () => {
                 </ul>
               )}
             </div>
-            <div className={styles['step-image-wrapper']}>
+            <div
+              className={styles['step-image-wrapper']}
+              style={{ order: step.imageOrder }}
+            >
               <Image
-                className={styles['step-image']}
+                className={styles[`step-image${step.step}`]}
                 src={step.src}
                 width={500}
                 height={400}

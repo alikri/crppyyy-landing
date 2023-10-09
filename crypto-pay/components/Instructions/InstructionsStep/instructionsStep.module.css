@@ -27,19 +27,16 @@
   margin-block: 20px;
 }
 
-.step-info-wrapper ol {
-  padding-left: 25px;
-}
-
+.step-info-wrapper ol,
 .step-info-wrapper ul {
-  padding-left: 18px;
+  padding-left: 25px;
 }
 
 .step-info-wrapper p {
   font-weight: 300;
   line-height: 120%;
   letter-spacing: .5px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   cursor: pointer;
   max-width: 380px;
 }
@@ -61,6 +58,7 @@
 
 
 .step-image-wrapper {
+  max-width: 590px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,4 +66,16 @@
   border-radius: 40px;
   height: 488px;
   background: var(--bacground-gradient-purple);
+}
+
+.step-image1 {
+  max-width: 450px;
+}
+
+.step-image2 {
+  max-width: 394px;
+}
+
+.step-image3 {
+  max-width: 400px;
 }
