@@ -15,7 +15,7 @@
 }
 
 
-.verification h3 {
+.verification-title {
   font-size: 42px;
   font-weight: 600;
   line-height: 110%;
@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 
-.verification p {
+.verification-details {
   letter-spacing: .7px;
   margin-bottom: 0px;
 }
@@ -42,4 +42,14 @@
   position: absolute;
   top: 60px;
   z-index: 1;
+}
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
 }

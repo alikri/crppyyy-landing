@@ -23,8 +23,8 @@ export const Features = ({ darkTheme }) => {
           </div>
         </div>
         <div className={styles['features-container-row3']}>
-          <Verification />
-          <Anonymous />
+          <Verification darkTheme={darkTheme} />
+          <Anonymous darkTheme={darkTheme} />
         </div>
       </div>
     </section>

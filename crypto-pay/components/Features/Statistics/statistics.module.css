@@ -15,7 +15,7 @@
   background-image: url('/images/statistics/statisticsBg.svg');
 }
 
-.statistics h3 {
+.statistics-title {
   font-size: 42px;
   font-style: normal;
   font-weight: 600;
@@ -24,7 +24,7 @@
   margin-bottom: 0px;
 }
 
-.statistics p {
+.statistics-details {
   letter-spacing: .55px;
   margin-bottom: 0px;
 }
@@ -32,4 +32,14 @@
 .link {
   color: var(--blue);
   letter-spacing: .9px;
+}
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
 }

@@ -1,14 +1,24 @@
 import styles from './verification.module.css';
 import phoneHalfBody from '/public/images/verification/phone-half-body.png';
+import phoneHalfBodyDark from '/public/images/verification/half-phone-dark.png';
 import { verificationData } from './verificationData';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Verification = () => {
+export const Verification = ({ darkTheme }) => {
   return (
-    <div className={styles['verification']}>
+    <div
+      className={`${styles['verification']} ${
+        darkTheme && styles['dark-white']
+      }`}
+    >
       <div className={styles['verification-phone-wrapper']}>
-        <Image src={phoneHalfBody} width={474} height={358} alt="usd label" />
+        <Image
+          src={darkTheme ? phoneHalfBodyDark : phoneHalfBody}
+          width={darkTheme ? 600 : 474}
+          height={358}
+          alt="usd label"
+        />
         <Image
           className={styles['message-image']}
           src={verificationData[0].src}
@@ -24,8 +34,18 @@ export const Verification = () => {
           alt="message example"
         />
       </div>
-      <h3>Send coins to users</h3>
-      <p>
+      <h3
+        className={`${styles['verification-title']} ${
+          darkTheme && styles['dark-white']
+        }`}
+      >
+        Send coins to users
+      </h3>
+      <p
+        className={`${styles['verification-details']} ${
+          darkTheme && styles['dark-white80']
+        }`}
+      >
         Automate payouts to users with{' '}
         <Link className={styles['link']} href={'#'}>
           {' '}

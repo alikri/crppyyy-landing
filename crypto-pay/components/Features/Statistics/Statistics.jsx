@@ -3,9 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import statisticsImage from '/public/images/statistics/statistics.svg';
 
-export const Statistics = () => {
+export const Statistics = ({ darkTheme }) => {
   return (
-    <div className={styles['statistics']}>
+    <div
+      className={`${styles['statistics']}  ${
+        darkTheme && styles['dark-white']
+      }`}
+    >
       <div className={styles['statistics-wrapper']}>
         <Image
           src={statisticsImage}
@@ -14,8 +18,18 @@ export const Statistics = () => {
           alt="Statistics icon"
         />
       </div>
-      <h3>Payment statistics</h3>
-      <p>
+      <h3
+        className={`${styles['statistics-title']}  ${
+          darkTheme && styles['dark-white']
+        }`}
+      >
+        Payment statistics
+      </h3>
+      <p
+        className={`${styles['statistics-details']}  ${
+          darkTheme && styles['dark-white80']
+        }`}
+      >
         Open{' '}
         <Link className={styles['link']} href={'#'}>
           @CryptoBot
