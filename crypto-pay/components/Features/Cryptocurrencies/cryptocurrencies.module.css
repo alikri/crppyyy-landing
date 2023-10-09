@@ -9,6 +9,10 @@
   border-radius: 40px;
 }
 
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
 
 .commision {
   width: 100%;
@@ -56,7 +60,7 @@
   align-items: center;
 }
 
-.cryptocurrency-label-container p {
+.logo-title {
   color: rgba(17, 17, 17, 0.40);
   font-size: 14px;
   font-style: normal;
@@ -69,4 +73,9 @@
 
 .link {
   color: var(--blue);
+}
+
+.dark-white80 {
+  background-color: var(--background-dark);
+  color: var(--white80);
 }

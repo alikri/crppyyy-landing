@@ -12,7 +12,7 @@ export const MainContent = ({ darkTheme }) => {
     <>
       <Header darkTheme={darkTheme} />
       <Intro darkTheme={darkTheme} />
-      <Cases darkTheme={darkTheme} />
+      <Cases />
       <Features darkTheme={darkTheme} />
       <Instructions darkTheme={darkTheme} />
       <Api darkTheme={darkTheme} />

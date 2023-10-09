@@ -6,20 +6,20 @@ import { Exchange } from './Exchange/Exchange';
 import { Verification } from './Verification/Verification';
 import { Anonymous } from './Anonymous/Anonymous';
 
-export const Features = () => {
+export const Features = ({ darkTheme }) => {
   return (
     <section className={styles['features']}>
       <div className={styles['features-container']}>
         <div className={styles['features-container-row1']}>
-          <Cryptocurrencies />
+          <Cryptocurrencies darkTheme={darkTheme} />
         </div>
         <div className={styles['features-container-row2']}>
           <div className={styles['features-container-column1']}>
-            <Commision />
-            <Exchange />
+            <Commision darkTheme={darkTheme} />
+            <Exchange darkTheme={darkTheme} />
           </div>
           <div className={styles['features-container-column2']}>
-            <Statistics />
+            <Statistics darkTheme={darkTheme} />
           </div>
         </div>
         <div className={styles['features-container-row3']}>

@@ -3,13 +3,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { cryptocurrenciesLabels } from './cryptocurrenciesLabels';
 
-export const Cryptocurrencies = () => {
+export const Cryptocurrencies = ({ darkTheme }) => {
   return (
-    <div className={styles['cryptocurrencies']}>
-      <h3 className={styles['cryptocurrencies-title']}>
+    <div
+      className={`${styles['cryptocurrencies']} ${
+        darkTheme && styles['dark-white']
+      }`}
+    >
+      <h3
+        className={`${styles['cryptocurrencies-title']} ${
+          darkTheme && styles['dark-white']
+        }`}
+      >
         Accept a wide range of cryptocurrencies
       </h3>
-      <p className={styles['cryptocurrencies-details']}>
+      <p
+        className={`${styles['cryptocurrencies-details']} ${
+          darkTheme && styles['dark-white80']
+        }`}
+      >
         Bill any supported cryptocurrencies with asset parameter in{' '}
         <Link className={styles['link']} href={'https://t.me/CryptoBot'}>
           GetInvoice
@@ -31,7 +43,13 @@ export const Cryptocurrencies = () => {
                 alt="Crypto currency label"
               />
             </div>
-            <p>{label.name}</p>
+            <p
+              className={`${styles['logo-title']}  ${
+                darkTheme && styles['dark-white80']
+              }`}
+            >
+              {label.name}
+            </p>
           </div>
         ))}
       </div>
