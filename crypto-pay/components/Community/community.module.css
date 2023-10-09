@@ -1,0 +1,47 @@
+.community-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.community-container h2 {
+  font-family: 'SFPro Bold';
+  font-size: 56px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.community-container p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 580px;
+  font-weight: 300;
+  letter-spacing: .6px;
+}
+
+.community-container button {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.logo-container {
+  width: 180px;
+}
+
+.logo-container p {
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}

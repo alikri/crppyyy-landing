@@ -4,6 +4,8 @@ import { Features } from '@/components/Features/Features';
 import Head from 'next/head';
 import { Instructions } from '@/components/Instructions/Instructions';
 import { Api } from '@/components/Api/Api';
+import { Community } from '@/components/Community/Community';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <Features />
         <Instructions />
         <Api />
+        <Community />
+        <Footer />
       </main>
     </>
   );
