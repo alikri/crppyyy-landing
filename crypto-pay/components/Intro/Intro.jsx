@@ -30,15 +30,13 @@ export const Intro = () => {
         <h1 className={styles['intro-title']}>
           Crypto payments for <span>telegram bots</span>
         </h1>
-        <h2 className={styles['intro-subtitle']}>
+        <p className={styles['intro-subtitle']}>
           Seamlessly accept crypto payments <br /> in your Telegram bots and
           services.
-        </h2>
+        </p>
         <button className={styles['intro-button']}>Get started</button>
         <div className={styles['bots-container']}>{bots}</div>
-        <h2 className={styles['intro-subtitle']}>
-          Popular bots use Crypto Pay
-        </h2>
+        <p className={styles['intro-subtitle']}>Popular bots use Crypto Pay</p>
       </div>
       <Phone />
     </section>

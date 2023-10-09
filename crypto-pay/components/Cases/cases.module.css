@@ -57,7 +57,8 @@
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  letter-spacing: -1.5px;
+  /* letter-spacing: -1.5px; */
+  margin-top: 62px;
   margin-bottom: 32px;
   cursor: pointer;
 }

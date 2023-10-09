@@ -21,6 +21,7 @@
 }
 
 .header-link {
+  color: var(--dark);
   font-weight: 500;
   line-height: 24px;
   font-size: 20px;

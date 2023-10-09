@@ -1,11 +1,5 @@
-import { Intro } from '@/components/Intro/Intro';
-import { Cases } from '@/components/Cases/Cases';
-import { Features } from '@/components/Features/Features';
 import Head from 'next/head';
-import { Instructions } from '@/components/Instructions/Instructions';
-import { Api } from '@/components/Api/Api';
-import { Community } from '@/components/Community/Community';
-import { Footer } from '@/components/Footer/Footer';
+import { MainContent } from '@/components/MainContent/MainContent';
 
 export default function Home() {
   return (
@@ -17,13 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main-content">
-        <Intro />
-        <Cases />
-        <Features />
-        <Instructions />
-        <Api />
-        <Community />
-        <Footer />
+        <MainContent />
       </main>
     </>
   );
