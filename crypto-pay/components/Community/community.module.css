@@ -9,14 +9,14 @@
   margin-bottom: 80px;
 }
 
-.community-container h2 {
+.community-title {
   font-family: 'SFPro Bold';
   font-size: 56px;
   margin-top: 20px;
   margin-bottom: 24px;
 }
 
-.community-container p {
+.community-details {
   margin-top: 0;
   margin-bottom: 40px;
   max-width: 580px;
@@ -41,7 +41,15 @@
   width: 180px;
 }
 
-.logo-container p {
+.label-title {
   letter-spacing: 1px;
   margin-bottom: 40px;
+}
+
+.dark-white {
+  color: var(--white);
+}
+
+.dark-white80 {
+  color: var(--white80);
 }

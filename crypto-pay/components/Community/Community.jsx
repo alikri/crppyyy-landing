@@ -2,12 +2,24 @@ import styles from './community.module.css';
 import Image from 'next/image';
 import { communityData } from './communityData';
 
-export const Community = () => {
+export const Community = ({ darkTheme }) => {
   return (
-    <div className={styles['community']}>
+    <div
+      className={`${styles['community']}  ${darkTheme && styles['dark-white']}`}
+    >
       <div className={styles['community-container']}>
-        <h2>Join dev community</h2>
-        <p>
+        <h2
+          className={`${styles['community-title']}  ${
+            darkTheme && styles['dark-white']
+          }`}
+        >
+          Join dev community
+        </h2>
+        <p
+          className={`${styles['community-details']}  ${
+            darkTheme && styles['dark-white80']
+          }`}
+        >
           Connect with bot developers and explore the possibilities our crypto
           payments service unlocks.
         </p>
@@ -24,7 +36,13 @@ export const Community = () => {
                 height={106}
                 alt={logo.alt}
               />
-              <p>{logo.title}</p>
+              <p
+                className={`${styles['label-title']} ${
+                  darkTheme && styles['dark-white80']
+                }`}
+              >
+                {logo.title}
+              </p>
             </div>
           ))}
         </div>
