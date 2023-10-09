@@ -44,6 +44,12 @@
   z-index: 1;
 }
 
+.message-shadow-image-dark {
+  position: absolute;
+  top: 47px;
+  z-index: 1;
+}
+
 .dark-white {
   background-color: var(--background-dark);
   color: var(--white);

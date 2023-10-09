@@ -1,7 +1,7 @@
 import styles from './verification.module.css';
 import phoneHalfBody from '/public/images/verification/phone-half-body.png';
 import phoneHalfBodyDark from '/public/images/verification/half-phone-dark.png';
-import { verificationData } from './verificationData';
+import { verificationData, verificationDataDark } from './verificationData';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,14 +21,24 @@ export const Verification = ({ darkTheme }) => {
         />
         <Image
           className={styles['message-image']}
-          src={verificationData[0].src}
+          src={
+            darkTheme ? verificationDataDark[0].src : verificationData[0].src
+          }
           width={400}
           height={125}
           alt="message example"
         />
         <Image
-          className={styles['message-shadow-image']}
-          src={verificationData[0].srcBlur}
+          className={
+            darkTheme
+              ? styles['message-shadow-image-dark']
+              : styles['message-shadow-image']
+          }
+          src={
+            darkTheme
+              ? verificationDataDark[0].srcBlur
+              : verificationData[0].srcBlur
+          }
           width={370}
           height={125}
           alt="message example"
