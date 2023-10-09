@@ -20,6 +20,7 @@ export default function Home() {
       darkThemeMq.removeEventListener('change', handleChange);
     };
   }, []);
+
   return (
     <>
       <Head>
