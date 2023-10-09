@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { instructionsData } from './instructionsData';
 
-export const InstructionsStep = () => {
+export const InstructionsStep = ({ darkTheme }) => {
   return (
     <>
       {instructionsData.map((step, index) => {
@@ -16,13 +16,36 @@ export const InstructionsStep = () => {
                 paddingLeft: step.infoOrder === 2 ? '122px' : '0px',
               }}
             >
-              <h2>{step.step}</h2>
-              <h3>{step.title}</h3>
-              {step.description && <p>{step.description}</p>}
+              <h2
+                className={`${styles['step-info-number']}  ${
+                  darkTheme && styles['dark-white-bg']
+                }`}
+              >
+                {step.step}
+              </h2>
+              <h3
+                className={`${styles['step-info-title']}  ${
+                  darkTheme && styles['dark-white']
+                }`}
+              >
+                {step.title}
+              </h3>
+              {step.description && (
+                <p
+                  className={`${styles['step-info-details']}  ${
+                    darkTheme && styles['dark-white80']
+                  }`}
+                >
+                  {step.description}
+                </p>
+              )}
               {step.list === 'ol' ? (
                 <ol>
                   {step.listPoints.map((point) => (
-                    <li key={point.linkText}>
+                    <li
+                      className={`${darkTheme && styles['dark-white80']}`}
+                      key={point.linkText}
+                    >
                       {point.text && step.orderText === 1 && (
                         <>
                           {point.text}{' '}
@@ -45,7 +68,12 @@ export const InstructionsStep = () => {
               ) : (
                 <ul>
                   {step.listPoints.map((point) => (
-                    <li key={point.linkText} className={styles['ul-point']}>
+                    <li
+                      key={point.linkText}
+                      className={`${styles['ul-point']} ${
+                        darkTheme && styles['dark-white80']
+                      }`}
+                    >
                       {point.text && step.orderText === 1 && (
                         <>
                           {point.text}{' '}

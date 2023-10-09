@@ -15,19 +15,31 @@
   align-items: center;
 }
 
-.instructions-title-wrapper h2,
-.instructions-title-wrapper a {
+.instructions-title,
+.instructions-link {
   font-size: 56px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
 }
 
-.instructions-title-wrapper h2 {
+.instructions-title {
   margin: 0px;
+  letter-spacing: 1.8px;
 }
 
-.instructions-title-wrapper a {
+.instructions-link {
+  letter-spacing: 2.5px;
   color: var(--blue);
   margin-left: 15px;
+}
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
 }
