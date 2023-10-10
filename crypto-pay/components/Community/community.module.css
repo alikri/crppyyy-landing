@@ -57,3 +57,10 @@
 .dark-white80 {
   color: var(--white80);
 }
+
+@media (max-width: 1100px) {
+  .logos-container {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+}
