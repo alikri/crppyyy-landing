@@ -1,6 +1,7 @@
 .intro {
   display: flex;
-  max-width: 1200px;
+  padding-inline: 40px;
+  max-width: 1280px;
   width: 100%;
   justify-content: space-between;
   padding-block: 20px;
@@ -75,4 +76,27 @@
 .bot-image-4 {
   left: 256px;
   z-index: 5;
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 980px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bots-container {
+    width: 50%
+  }
 }

@@ -5,7 +5,7 @@ import apiImage from '../../public/images/api/api-img.png';
 
 export const Api = () => {
   return (
-    <div className={styles['api']}>
+    <section className={styles['api']}>
       <div className={styles['api-container']}>
         <div className={styles['api-info']}>
           <h2>Crypto Pay API</h2>
@@ -24,6 +24,6 @@ export const Api = () => {
           <Image className={styles['api-image']} src={apiImage} alt="figures" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

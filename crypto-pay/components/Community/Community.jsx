@@ -4,8 +4,10 @@ import { communityData } from './communityData';
 
 export const Community = ({ darkTheme }) => {
   return (
-    <div
-      className={`${styles['community']}  ${darkTheme && styles['dark-white']}`}
+    <section
+      className={`${styles['community']}  ${
+        darkTheme ? styles['dark-white'] : ''
+      }`}
     >
       <div className={styles['community-container']}>
         <h2
@@ -48,6 +50,6 @@ export const Community = ({ darkTheme }) => {
         </div>
         <button>Open Devs chat</button>
       </div>
-    </div>
+    </section>
   );
 };

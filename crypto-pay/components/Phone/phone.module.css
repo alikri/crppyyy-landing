@@ -60,3 +60,9 @@
   left: 140px;
   z-index: 7;
 }
+
+@media (max-width: 1200px) {
+  .intro-picture {
+    margin-right: 0px;
+  }
+}

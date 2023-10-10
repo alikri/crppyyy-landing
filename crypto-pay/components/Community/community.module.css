@@ -1,3 +1,7 @@
+.community {
+  padding-inline: 40px;
+}
+
 .community-container {
   text-align: center;
   display: flex;

@@ -1,5 +1,6 @@
 .instructions {
   padding-block: 120px;
+  padding-inline: 40px;
   display: flex;
   gap: 40px;
   flex-direction: column;
