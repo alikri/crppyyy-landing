@@ -59,3 +59,9 @@
   background: var(--background-dark);
   color: var(--white80);
 }
+
+@media (max-width: 1266px) {
+  .verification {
+    max-height: fit-content;
+  }
+}

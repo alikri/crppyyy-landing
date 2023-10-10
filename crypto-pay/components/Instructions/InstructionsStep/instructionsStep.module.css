@@ -57,12 +57,14 @@
 
 .step-image-wrapper {
   max-width: 590px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
   border-radius: 40px;
   height: 488px;
+  overflow-x: hidden;
 }
 
 .step-image1 {
@@ -89,4 +91,47 @@
 .dark-white-bg {
   background: var(--white);
   color: var(--dark);
+}
+
+@media (max-width: 1100px) {
+  .step {
+    max-width: 456px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .step-info-number {
+    font-size: 34px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .step-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .step-info-details {
+    margin-left: 60px;
+    margin-block: 0px;
+    margin-bottom: 20px;
+  }
+
+  .step-info-wrapper ol,
+  .step-info-wrapper ul {
+    margin: 0px;
+    margin-left: 50px;
+  }
+
+  .step-info-title {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-block: 0px;
+    align-self: center;
+  }
+
 }

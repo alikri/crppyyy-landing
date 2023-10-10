@@ -2,8 +2,27 @@ import styles from './instructionsStep.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { instructionsData } from './instructionsData';
+import { useState, useEffect } from 'react';
 
 export const InstructionsStep = ({ darkTheme }) => {
+  const [windowSize, setWindowSize] = useState({ width: null });
+
+  useEffect(() => {
+    setWindowSize({ width: window.innerWidth });
+
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       {instructionsData.map((step, index) => {
@@ -12,8 +31,11 @@ export const InstructionsStep = ({ darkTheme }) => {
             <div
               className={styles['step-info-wrapper']}
               style={{
-                order: step.infoOrder,
-                paddingLeft: step.infoOrder === 2 ? '122px' : '0px',
+                order: windowSize.width < 1100 ? 2 : step.infoOrder,
+                paddingLeft:
+                  !step.infoOrder === 2 || windowSize.width < 1100
+                    ? '0px'
+                    : '122px',
               }}
             >
               <h2
@@ -102,7 +124,10 @@ export const InstructionsStep = ({ darkTheme }) => {
             </div>
             <div
               className={styles['step-image-wrapper']}
-              style={{ order: step.imageOrder, background: step.background }}
+              style={{
+                order: windowSize.width < 1100 ? 1 : step.imageOrder,
+                background: step.background,
+              }}
             >
               <Image
                 className={styles[`step-image${step.step}`]}
