@@ -21,13 +21,14 @@
 }
 
 .api-image-container {
+  max-width: 600px;
   position: relative;
 }
 
 .api-image {
   position: relative;
   top: 2px;
-  /* right: 50px; */
+
 }
 
 .api-info h2 {
@@ -57,4 +58,101 @@
   font-family: inherit;
   color: inherit;
   letter-spacing: inherit;
+}
+
+@media (max-width: 1200px) {
+  .api-container {
+    overflow: hidden;
+    padding-inline: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .api-info {
+    min-width: 260px;
+  }
+
+  .api-container {
+    overflow: hidden;
+    padding-inline: 30px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+
+  .api-image-container {
+    width: 100%;
+    max-width: 500px;
+    order: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .api {
+    max-height: 700px;
+  }
+
+  .api-image-container {
+    max-width: 400px;
+  }
+
+  .api-image {
+    max-height: 700px;
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 796px) {
+
+  .api {
+    width: fit-content;
+    min-height: 514px;
+  }
+
+  .api-container {
+    background-image: url('/images/api/api-small.png');
+    flex-direction: column;
+    padding-inline: 0px;
+    min-height: 514px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 335px;
+  }
+
+
+  .api-info h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+
+  .api-info p {
+    font-size: 18px;
+    max-width: 270px;
+    margin-bottom: 24px;
+  }
+
+  .api-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 270px;
+  }
+
+  .api-info button {
+    align-self: center;
+    display: flex;
+    max-height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+  }
 }
