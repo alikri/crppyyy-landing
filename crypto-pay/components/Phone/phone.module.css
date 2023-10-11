@@ -66,3 +66,24 @@
     margin-right: 0px;
   }
 }
+
+@media (max-width: 429px) {
+  .intro-picture img {
+    max-width: 300px;
+    max-height: 630px;
+  }
+
+  .phone {
+    top: 10px;
+    left: 1.5px;
+    z-index: 3;
+    max-width: 300px;
+    max-height: 635px;
+  }
+
+  .intro-picture {
+    max-width: 300px;
+    max-height: 635px;
+  }
+
+}

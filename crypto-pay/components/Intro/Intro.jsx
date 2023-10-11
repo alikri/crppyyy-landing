@@ -39,8 +39,7 @@ export const Intro = ({ darkTheme }) => {
             darkTheme && styles['intro-dark']
           }`}
         >
-          Seamlessly accept crypto payments <br /> in your Telegram bots and
-          services.
+          Seamlessly accept crypto payments in your Telegram bots and services.
         </p>
         <button className={styles['intro-button']}>Get started</button>
         <div className={styles['bots-container']}>{bots}</div>
