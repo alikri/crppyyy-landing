@@ -39,8 +39,8 @@ export const Case = (props) => {
               className={styles['case-img-link']}
               src={linkImage}
               alt="Crypto Bot"
-              width={400}
-              height={50}
+              width={props.windowWidth < 970 ? 280 : 400}
+              height={props.windowWidth < 970 ? 42 : 50}
             />
           </Link>
         )}

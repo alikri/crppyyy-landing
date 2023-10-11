@@ -8,18 +8,50 @@ export const Cases = () => {
   const carouselRef = useRef(null);
   const [sliderCount, setSliderCount] = useState(0);
   const [sliderHeight, setSliderHeight] = useState(0);
+  const [sliderWidth, setSliderWidth] = useState(0);
   const [carouselHeight, setCarouselHeight] = useState(null);
+  const [carouselWidth, setCarouselWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(null);
 
-  function showSlide() {
-    if (wrapperRef.current) {
-      const sliderHeight = wrapperRef.current.offsetHeight;
+  function updateWindowSizes() {
+    const currentWindowWidth = window.innerWidth;
+    setWindowWidth(currentWindowWidth);
 
-      setSliderHeight(sliderHeight);
-      setCarouselHeight(sliderHeight * casesData.length + 'px');
+    if (currentWindowWidth < 970) {
+      if (wrapperRef.current) {
+        const sliderWidth = wrapperRef.current.offsetWidth;
+
+        setSliderHeight(0);
+        setCarouselHeight(null);
+
+        setSliderWidth(sliderWidth);
+        setCarouselWidth(sliderWidth * casesData.length + 'px');
+
+        carouselRef.current.style.transform = `translateY(0px)`;
+      }
+    } else {
+      if (wrapperRef.current) {
+        const sliderHeight = wrapperRef.current.offsetHeight;
+
+        setSliderWidth(0);
+        setCarouselWidth(null);
+
+        setSliderHeight(sliderHeight);
+        setCarouselHeight(sliderHeight * casesData.length + 'px');
+      }
+      carouselRef.current.style.transform = `translateX(0px)`;
     }
   }
 
+  function showSlide() {
+    updateWindowSizes();
+  }
+
+  console.log(sliderWidth);
+
   useEffect(() => {
+    updateWindowSizes();
+
     window.addEventListener('resize', showSlide);
     showSlide();
     return () => window.removeEventListener('resize', showSlide);
@@ -37,9 +69,15 @@ export const Cases = () => {
   };
 
   function rollSlider(count) {
-    carouselRef.current.style.transform = `translateY(${
-      -count * sliderHeight
-    }px)`;
+    if (windowWidth < 970) {
+      carouselRef.current.style.transform = `translateX(${
+        -count * sliderWidth
+      }px)`;
+    } else {
+      carouselRef.current.style.transform = `translateY(${
+        -count * sliderHeight
+      }px)`;
+    }
   }
 
   return (
@@ -51,6 +89,7 @@ export const Cases = () => {
               key={`case${index}`}
               case={currentCase}
               handleClick={handleClick}
+              windowWidth={windowWidth}
             />
           ))}
         </div>
