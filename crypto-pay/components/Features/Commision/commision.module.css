@@ -1,0 +1,95 @@
+.commision {
+  padding: 42px 56px;
+  background-color: var(--background-light);
+  border-radius: 40px;
+  max-width: 488px;
+  max-height: 366px;
+}
+
+.commision-wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.commision-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.commision-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 17px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  background: var(--background-blue-light);
+  margin-bottom: 30px;
+}
+
+.commision-cursor {
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+}
+
+.commision-title {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 0px;
+}
+
+.commision-details {
+  letter-spacing: .7px;
+  margin-bottom: 0px;
+}
+
+.link {
+  color: var(--blue);
+}
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-button {
+  background: var(--background-gradient-blue);
+  color: var(--white);
+}
+
+.dark-button-text {
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
+}
+
+@media (max-width: 1266px) {
+  .commision {
+    max-height: fit-content;
+  }
+
+  .commision-title {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .commision {
+    max-height: fit-content;
+  }
+
+  .commision-title {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,73 @@
+.exchange {
+  padding: 42px 56px;
+  background-color: var(--background-light);
+  border-radius: 40px;
+  max-width: 488px;
+  max-height: 366px;
+}
+
+.exchange-labels-container {
+  display: flex;
+  justify-content: center;
+}
+
+.exchange-labels-crypto {
+  position: relative;
+  width: 180px;
+}
+
+.exchange-title {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.exchange-details {
+  letter-spacing: .7px;
+  margin-bottom: 0px;
+}
+
+
+.label1 {
+  position: absolute;
+  left: 35px;
+}
+
+.label2 {
+  position: absolute;
+  left: 65px;
+}
+
+.exchange-button-wrapper {
+  position: relative;
+}
+
+.exchange-button {
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  background-color: transparent;
+  max-width: 43px;
+  max-height: 25px;
+  padding: 0;
+  backdrop-filter: blur(8px);
+}
+
+
+.dark-white {
+  background-color: var(--background-dark);
+  color: var(--white);
+}
+
+.dark-white80 {
+  background: var(--background-dark);
+  color: var(--white80);
+}
+
+@media (max-width: 1266px) {
+  .exchange {
+    max-height: fit-content;
+  }
+}
