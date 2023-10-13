@@ -17,37 +17,34 @@ export const Cases = () => {
     const currentWindowWidth = window.innerWidth;
     setWindowWidth(currentWindowWidth);
 
-    if (currentWindowWidth < 970) {
+    if (currentWindowWidth <= 970) {
       if (wrapperRef.current) {
         const sliderWidth = wrapperRef.current.offsetWidth;
 
-        setSliderHeight(0);
-        setCarouselHeight(null);
-
         setSliderWidth(sliderWidth);
         setCarouselWidth(sliderWidth * casesData.length + 'px');
-
-        carouselRef.current.style.transform = `translateY(0px)`;
       }
     } else {
       if (wrapperRef.current) {
         const sliderHeight = wrapperRef.current.offsetHeight;
 
-        setSliderWidth(0);
-        setCarouselWidth(null);
-
         setSliderHeight(sliderHeight);
         setCarouselHeight(sliderHeight * casesData.length + 'px');
       }
-      carouselRef.current.style.transform = `translateX(0px)`;
+    }
+
+    if (sliderCount >= casesData.length) {
+      setSliderCount(0);
+      rollSlider(0);
+    } else {
+      setSliderCount(sliderCount);
+      rollSlider(sliderCount);
     }
   }
 
   function showSlide() {
     updateWindowSizes();
   }
-
-  console.log(sliderWidth);
 
   useEffect(() => {
     updateWindowSizes();
@@ -69,7 +66,7 @@ export const Cases = () => {
   };
 
   function rollSlider(count) {
-    if (windowWidth < 970) {
+    if (windowWidth <= 970) {
       carouselRef.current.style.transform = `translateX(${
         -count * sliderWidth
       }px)`;
